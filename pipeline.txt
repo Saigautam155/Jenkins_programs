@@ -1,0 +1,26 @@
+pipeline
+{
+    agent any
+    stages{
+        stage('compile'){
+            steps{
+                echo "compiled successfully";
+            }
+        }
+        stage('junit'){
+            steps{
+                echo "junit test passed successfully";
+            }
+        }
+        stage('qualitycheck'){
+            steps{
+                echo "quality check passed successfully";
+            }
+        }
+        stage('deploy'){
+            steps{
+                echo "deployed successfully";
+            }
+        }
+    }
+}
